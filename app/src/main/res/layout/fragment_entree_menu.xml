@@ -34,14 +34,16 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/Change_White">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/side_margin"
             android:paddingEnd="@dimen/side_margin"
-            android:paddingBottom="@dimen/side_margin">
+            android:paddingBottom="@dimen/side_margin"
+            android:background="@color/Change_White">
 
             <RadioGroup
                 android:id="@+id/entree_options"
@@ -177,7 +179,8 @@
                 android:layout_marginTop="@dimen/base_margin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/entree_options" />
+                app:layout_constraintTop_toBottomOf="@id/entree_options"
+                />
 
             <!-- TODO: set the text to the current subtotal value from the view model -->
             <TextView
@@ -194,7 +197,8 @@
                 app:layout_constraintEnd_toStartOf="@id/next_button"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/next_button"
-                android:onClick="@{() -> entreeFragment.cancelOrder()}"/>
+                android:onClick="@{() -> entreeFragment.cancelOrder()}"
+                android:textColor="@color/Change_Green"/>
 
             <!-- TODO: go to the next screen when clicked -->
             <Button
@@ -204,7 +208,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/cancel_button"
                 app:layout_constraintTop_toBottomOf="@id/subtotal"
-                android:onClick="@{() -> entreeFragment.goToNextScreen()}"/>
+                android:onClick="@{() -> entreeFragment.goToNextScreen()}"
+                android:backgroundTint="@color/Change_Green"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

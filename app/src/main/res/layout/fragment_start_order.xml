@@ -21,7 +21,8 @@
     android:id="@+id/layout_start_order"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.order.StartOrderFragment">
+    tools:context=".ui.order.StartOrderFragment"
+    android:background="@color/Change_White">
 
     <Button
         android:id="@+id/start_order_btn"
@@ -34,6 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/Change_Green"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

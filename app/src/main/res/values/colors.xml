@@ -19,4 +19,8 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="black">#FF000000</color>
+    <color name="Change_black">#222831</color>
+    <color name="Change_Green">#00ADB5</color>
+    <color name="Change_Gray">#393E46</color>
+    <color name="Change_White">#EEEEEEEE</color>
 </resources>
